@@ -5,7 +5,7 @@
 
 
 class EmailAdressParser
-  attr_accessible: email
+  attr_accessible :email
   
   def initialize (emails)
     final = []

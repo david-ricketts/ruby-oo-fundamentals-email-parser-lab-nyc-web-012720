@@ -22,7 +22,7 @@ class EmailAdressParser
     @email
   end
   def parse 
-    puts @email
+    puts "#{@email}"
 end    
       
       

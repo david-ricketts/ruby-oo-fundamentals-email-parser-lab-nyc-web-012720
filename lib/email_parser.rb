@@ -21,6 +21,8 @@ class EmailAdressParser
   def email 
     @email
   end
+  def parse 
+    puts @email
 end    
       
       

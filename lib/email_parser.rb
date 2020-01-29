@@ -16,6 +16,7 @@ class EmailAdressParser
     else
       @email = email 
     end
+  end
 
     def email 
       @email

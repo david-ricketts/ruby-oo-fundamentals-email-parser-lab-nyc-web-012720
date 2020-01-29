@@ -9,6 +9,12 @@ class EmailAdressParser
   
   def initialize (email)
     if email.include?(', ')
-      @email
-    if email.include?(' ')
-      email
+      @email = email
+    elsif email.include?(' ')
+      @email = email.split(' ')
+    else
+      @email = email 
+    end
+    
+      
+      

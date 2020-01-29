@@ -10,12 +10,16 @@ class EmailAdressParser
   def initialize (emails)
     final = []
     if emails.include?(', ')
-      emails.split(', ').each { |email| final << email}  
+      @email = emails.split(', ')  
     elsif email.include?(' ')
-      email.split(' ')
+      @email = email.split(' ')
     else
       @email = email 
     end
-    
+
+    def email 
+      @email
+    end
+end    
       
       

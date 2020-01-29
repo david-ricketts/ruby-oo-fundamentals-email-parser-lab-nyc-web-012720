@@ -17,10 +17,10 @@ class EmailAdressParser
       @email = email 
     end
   end
-
-    def email 
-      @email
-    end
+  
+  def email 
+    @email
+  end
 end    
       
       

@@ -7,11 +7,12 @@
 class EmailAdressParser
   attr_accessible: :email
   
-  def initialize (email)
-    if email.include?(', ')
-      @email = email
+  def initialize (emails)
+    final = []
+    if emails.include?(', ')
+      emails.split(', ').each { |email| final << email}  
     elsif email.include?(' ')
-      @email = email.split(' ')
+      email.split(' ')
     else
       @email = email 
     end

@@ -5,5 +5,10 @@
 
 
 class EmailAdressParser
-  attr_accessible: email
+  attr_accessible: :email
   
+  def initialize (email)
+    if email.include?(', ')
+      @email
+    if email.include?(' ')
+      email
